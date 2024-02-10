@@ -1,0 +1,5 @@
+data
+.venv
+labelled_data
+__pycache__
+**.txt
