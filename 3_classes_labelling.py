@@ -111,7 +111,7 @@ def main():
     create_event, create_non_event = False, True # do not need to create non-event, they're the same of the binary problem
 
     # PATHS
-    path_sc_compact = 'data/sc_compact_1995_2019_d.csv' # path of file recording all events times (sc_compact_1995_2019_d.csv)
+    path_sc_compact = 'data/sc_compact_1995_2019_d.csv' # path of file recording all events from 1995 to 2019, from Observatori de l'Ebre
     events_dir = 'data/events/' # directory containing all events csv files at 1sec resolution from SuperMAG
     events = os.listdir(events_dir) # list of csv of events
     events.sort()

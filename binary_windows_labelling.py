@@ -6,6 +6,9 @@ from datetime import datetime
 '''
 Create labelled data for binary classification problem.
 Label data-windows as containing an event or a non-event.
+
+NOTE: set the right data paths (search for the comment "PATHS"); 
+if needed, may also change the selected parameters (search for "PARAMS").
 '''
 
 
@@ -163,12 +166,12 @@ def main():
     create_event, create_non_event = True, True
 
     # PATHS
-    path_sc_compact = 'data/sc_compact_1995_2019_d.csv' # path of file recording all events times (sc_compact_1995_2019_d.csv)
+    path_sc_compact = 'data/sc_compact_1995_2019_d.csv' # path of file recording all events from 1995 to 2019, from Observatori de l'Ebre
     events_dir = 'data/events/' # directory containing all events csv files at 1sec resolution from SuperMAG
     events = os.listdir(events_dir) # list of csv of events
     events.sort()
-    event_path = 'labelled_data/event/' # folder where to save event-labelled windows
-    non_event_path = 'labelled_data/non-events/' # folder where to save non-event-labelled windows
+    event_path = 'labelled_data/event/' # folder where to SAVE event-labelled windows
+    non_event_path = 'labelled_data/non-events/' # folder where to SAVE non-event-labelled windows
 
     ###########################
 
