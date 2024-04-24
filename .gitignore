@@ -2,3 +2,6 @@ data
 .venv
 labelled_data
 __pycache__
+**.odt
+**.pdf
+**.txt
